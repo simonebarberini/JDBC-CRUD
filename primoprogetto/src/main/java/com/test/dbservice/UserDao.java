@@ -10,8 +10,7 @@ import java.util.List;
 import com.test.model.User;
 
 public class UserDao {
-    
-
+    //CREATE USER
     public void createUser(User user){
         String sql = "INSERT INTO prova (nome,email) VALUES (?,?)";
         try (Connection conn = DatabaseConnection.getConnection();
